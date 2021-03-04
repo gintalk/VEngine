@@ -5,11 +5,12 @@
  * @author namnh16 on 03/03/2021
  */
 
-import com.vgu.cs.engine.dao.CareSiteDao;
+import com.vgu.cs.engine.dao.*;
+import com.vgu.cs.engine.entity.VisitOccurrenceEntity;
 
 public class Logic {
     public static void main(String[] args) {
-        CareSiteDao dao = new CareSiteDao("bestdb");
-        System.out.println(dao.selectAll("SELECT * FROM care_site WHERE care_site_id=1"));
+        ObservationDao dao = new ObservationDao("someInstance");
+        System.out.println(dao.selectColumns("SELECT value_as_number FROM observation WHERE observation_id=1"));
     }
 }

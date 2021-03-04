@@ -10,6 +10,8 @@ package com.vgu.cs.engine.dao;
 import com.vgu.cs.common.config.VConfig;
 import com.vgu.cs.common.logger.VLogger;
 import com.vgu.cs.common.util.CollectionUtils;
+import com.vgu.cs.engine.entity.PostgreSqlEntity;
+import com.vgu.cs.engine.util.SqlUtils;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.apache.logging.log4j.Logger;
 
@@ -21,7 +23,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-public abstract class PostgreSqlDao<T> {
+public abstract class PostgreSqlDao<T extends PostgreSqlEntity> {
 
     private static final Logger LOGGER = VLogger.getLogger(PostgreSqlDao.class);
     private static final Map<String, BasicDataSource> DATA_SOURCE_MAP = new ConcurrentHashMap<>();
@@ -146,7 +148,7 @@ public abstract class PostgreSqlDao<T> {
             ResultSetMetaData metaData = rs.getMetaData();
 
             for (int i = 1; i <= metaData.getColumnCount(); i++) {
-                String fieldTypeName = metaData.getColumnTypeName(i);
+                String fieldTypeName = SqlUtils.toJavaClassName(metaData.getColumnType(i));
                 String fieldName = metaData.getColumnName(i);
                 object.put(fieldName, _getFieldValue(fieldTypeName, fieldName, rs));
             }
@@ -173,6 +175,10 @@ public abstract class PostgreSqlDao<T> {
             return resultSet.getShort(fieldName);
         } else if ("String".equals(fieldTypeName)) {
             return resultSet.getString(fieldName);
+        } else if("sql.Timestamp".equals(fieldTypeName)){
+            return SqlUtils.timestampToString(resultSet.getTimestamp(fieldName));
+        } else if("sql.Date".equals(fieldTypeName)){
+            return SqlUtils.dateToString(resultSet.getDate(fieldName));
         }
         return null;
     }
