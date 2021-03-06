@@ -158,7 +158,7 @@ public abstract class PostgreSqlDao<T extends PostgreSqlEntity> {
         return ret;
     }
 
-    private Object _getFieldValue(Class<?> fieldType, String fieldName, ResultSet resultSet) throws SQLException{
+    private Object _getFieldValue(Class<?> fieldType, String fieldName, ResultSet resultSet) throws SQLException {
         return _getFieldValue(fieldType.getSimpleName(), fieldName, resultSet);
     }
 
@@ -175,9 +175,9 @@ public abstract class PostgreSqlDao<T extends PostgreSqlEntity> {
             return resultSet.getShort(fieldName);
         } else if ("String".equals(fieldTypeName)) {
             return resultSet.getString(fieldName);
-        } else if("sql.Timestamp".equals(fieldTypeName)){
+        } else if ("sql.Timestamp".equals(fieldTypeName)) {
             return SqlUtils.timestampToString(resultSet.getTimestamp(fieldName));
-        } else if("sql.Date".equals(fieldTypeName)){
+        } else if ("sql.Date".equals(fieldTypeName)) {
             return SqlUtils.dateToString(resultSet.getDate(fieldName));
         }
         return null;

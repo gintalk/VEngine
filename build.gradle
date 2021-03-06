@@ -14,6 +14,10 @@ dependencies {
     compile 'org.postgresql:postgresql:42.2.19'
     compile 'org.apache.commons:commons-dbcp2:2.8.0'
 
+    // HAPI FHIR
+    compile 'ca.uhn.hapi.fhir:hapi-fhir-structures-dstu3:5.3.0'
+    compile 'ca.uhn.hapi.fhir:hapi-fhir-structures-r4:5.3.0'
+
     // Default
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
