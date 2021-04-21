@@ -11,6 +11,7 @@ import com.vgu.cs.common.util.CollectionUtils;
 import com.vgu.cs.engine.dao.ConceptDao;
 import com.vgu.cs.engine.entity.ConceptEntity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ConceptDal extends PostgreSqlDal<ConceptEntity> {
@@ -19,6 +20,15 @@ public class ConceptDal extends PostgreSqlDal<ConceptEntity> {
 
     private ConceptDal() {
         super("concept", new ConceptDao("bestdb"));
+    }
+    
+    public List<ConceptEntity> customizedGet(String sqlStatement, Object... params){
+        List<ConceptEntity> res = DAO.selectAll(sqlStatement, params);
+        if(res == null){
+            return new ArrayList<>();
+        }
+        
+        return res;
     }
 
     public ConceptEntity get(int conceptId) {
