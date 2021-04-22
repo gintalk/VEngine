@@ -11,6 +11,6 @@ import com.vgu.cs.engine.entity.LocationEntity;
 
 public class LocationDao extends PostgreSqlDao<LocationEntity> {
     public LocationDao(String instanceName){
-        super(LocationEntity.class, instanceName);
+        super(LocationEntity.class, instanceName, "location_id");
     }
 }

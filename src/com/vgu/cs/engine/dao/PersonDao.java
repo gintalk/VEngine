@@ -11,6 +11,6 @@ import com.vgu.cs.engine.entity.PersonEntity;
 
 public class PersonDao extends PostgreSqlDao<PersonEntity> {
     public PersonDao(String instanceName) {
-        super(PersonEntity.class, instanceName);
+        super(PersonEntity.class, instanceName, "person_id");
     }
 }

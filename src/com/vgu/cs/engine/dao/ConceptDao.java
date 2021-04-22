@@ -11,6 +11,6 @@ import com.vgu.cs.engine.entity.ConceptEntity;
 
 public class ConceptDao extends PostgreSqlDao<ConceptEntity> {
     public ConceptDao(String instanceName){
-        super(ConceptEntity.class, instanceName);
+        super(ConceptEntity.class, instanceName, "concept_id");
     }
 }

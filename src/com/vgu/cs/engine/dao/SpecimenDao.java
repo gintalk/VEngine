@@ -11,6 +11,6 @@ import com.vgu.cs.engine.entity.SpecimenEntity;
 
 public class SpecimenDao extends PostgreSqlDao<SpecimenEntity> {
     public SpecimenDao(String instanceName){
-        super(SpecimenEntity.class, instanceName);
+        super(SpecimenEntity.class, instanceName, "specimen_id");
     }
 }

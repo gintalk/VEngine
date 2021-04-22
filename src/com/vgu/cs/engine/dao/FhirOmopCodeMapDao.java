@@ -11,6 +11,6 @@ import com.vgu.cs.engine.entity.FhirOmopCodeMapEntity;
 
 public class FhirOmopCodeMapDao extends PostgreSqlDao<FhirOmopCodeMapEntity> {
     public FhirOmopCodeMapDao(String instanceName) {
-        super(FhirOmopCodeMapEntity.class, instanceName);
+        super(FhirOmopCodeMapEntity.class, instanceName, "omop_concept_id");
     }
 }

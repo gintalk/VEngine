@@ -27,10 +27,12 @@ public abstract class PostgreSqlDao<T extends PostgreSqlEntity> {
 
     private static final Logger LOGGER = VLogger.getLogger(PostgreSqlDao.class);
     private static final Map<String, BasicDataSource> DATA_SOURCE_MAP = new ConcurrentHashMap<>();
+    public final String keyField;
     private final Class<T> _clazz;
     private final String _instanceName;
 
-    public PostgreSqlDao(Class<T> clazz, String instanceName) {
+    public PostgreSqlDao(Class<T> clazz, String instanceName, String keyField) {
+        this.keyField = keyField;
         _clazz = clazz;
         _instanceName = instanceName;
     }

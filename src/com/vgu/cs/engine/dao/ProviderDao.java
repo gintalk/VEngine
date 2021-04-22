@@ -11,6 +11,6 @@ import com.vgu.cs.engine.entity.ProviderEntity;
 
 public class ProviderDao extends PostgreSqlDao<ProviderEntity> {
     public ProviderDao(String instanceName) {
-        super(ProviderEntity.class, instanceName);
+        super(ProviderEntity.class, instanceName, "provider_id");
     }
 }

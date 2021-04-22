@@ -11,6 +11,6 @@ import com.vgu.cs.engine.entity.CareSiteEntity;
 
 public class CareSiteDao extends PostgreSqlDao<CareSiteEntity> {
     public CareSiteDao(String instanceName) {
-        super(CareSiteEntity.class, instanceName);
+        super(CareSiteEntity.class, instanceName, "care_site_id");
     }
 }

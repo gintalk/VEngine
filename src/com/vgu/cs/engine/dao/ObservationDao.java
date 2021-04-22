@@ -11,6 +11,6 @@ import com.vgu.cs.engine.entity.ObservationEntity;
 
 public class ObservationDao extends PostgreSqlDao<ObservationEntity> {
     public ObservationDao(String instanceName) {
-        super(ObservationEntity.class, instanceName);
+        super(ObservationEntity.class, instanceName, "observation_id");
     }
 }

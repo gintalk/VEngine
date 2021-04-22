@@ -11,6 +11,6 @@ import com.vgu.cs.engine.entity.MeasurementEntity;
 
 public class MeasurementDao extends PostgreSqlDao<MeasurementEntity> {
     public MeasurementDao(String instanceName) {
-        super(MeasurementEntity.class, instanceName);
+        super(MeasurementEntity.class, instanceName, "measurement_id");
     }
 }

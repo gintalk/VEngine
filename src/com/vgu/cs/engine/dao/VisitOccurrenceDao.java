@@ -11,6 +11,6 @@ import com.vgu.cs.engine.entity.VisitOccurrenceEntity;
 
 public class VisitOccurrenceDao extends PostgreSqlDao<VisitOccurrenceEntity> {
     public VisitOccurrenceDao(String instanceName) {
-        super(VisitOccurrenceEntity.class, instanceName);
+        super(VisitOccurrenceEntity.class, instanceName, "visit_occurrence_id");
     }
 }

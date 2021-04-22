@@ -11,6 +11,6 @@ import com.vgu.cs.engine.entity.ProcedureOccurrenceEntity;
 
 public class ProcedureOccurrenceDao extends PostgreSqlDao<ProcedureOccurrenceEntity> {
     public ProcedureOccurrenceDao(String instanceName) {
-        super(ProcedureOccurrenceEntity.class, instanceName);
+        super(ProcedureOccurrenceEntity.class, instanceName, "procedure_occurrence_id");
     }
 }
