@@ -30,7 +30,7 @@ public class DrugExposureEntity extends PostgreSqlEntity {
     public String drug_source_value;
     public int drug_source_concept_id;
     public String route_source_value;
-    public String does_unit_source_value;
+    public String dose_unit_source_value;
 
     @Override
     public String toString() {
@@ -56,7 +56,7 @@ public class DrugExposureEntity extends PostgreSqlEntity {
                 ", drug_source_value='" + drug_source_value + '\'' +
                 ", drug_source_concept_id=" + drug_source_concept_id +
                 ", route_source_value='" + route_source_value + '\'' +
-                ", does_unit_source_value='" + does_unit_source_value + '\'' +
+                ", dose_unit_source_value='" + dose_unit_source_value + '\'' +
                 '}';
     }
 }
