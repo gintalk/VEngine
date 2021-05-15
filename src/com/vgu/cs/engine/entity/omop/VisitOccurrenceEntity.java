@@ -1,4 +1,4 @@
-package com.vgu.cs.engine.entity;
+package com.vgu.cs.engine.entity.omop;
 
 /*
  * Copyright (c) 2012-2016 by Zalo Group.

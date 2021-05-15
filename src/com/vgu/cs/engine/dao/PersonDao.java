@@ -7,7 +7,7 @@ package com.vgu.cs.engine.dao;
  * @author namnh16 on 04/03/2021
  */
 
-import com.vgu.cs.engine.entity.PersonEntity;
+import com.vgu.cs.engine.entity.omop.PersonEntity;
 
 public class PersonDao extends PostgreSqlDao<PersonEntity> {
     public PersonDao(String instanceName) {

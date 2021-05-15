@@ -18,6 +18,9 @@ dependencies {
     compile 'ca.uhn.hapi.fhir:hapi-fhir-base:5.3.0'
     compile 'ca.uhn.hapi.fhir:hapi-fhir-structures-dstu3:5.3.0'
 
+    // Gson
+    compile 'com.google.code.gson:gson:2.8.6'
+
     // Default
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'

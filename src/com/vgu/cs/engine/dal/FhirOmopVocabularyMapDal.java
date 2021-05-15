@@ -8,7 +8,7 @@ package com.vgu.cs.engine.dal;
  */
 
 import com.vgu.cs.engine.dao.FhirOmopVocabularyMapDao;
-import com.vgu.cs.engine.entity.FhirOmopVocabularyMapEntity;
+import com.vgu.cs.engine.entity.omop.FhirOmopVocabularyMapEntity;
 
 public class FhirOmopVocabularyMapDal extends PostgreSqlDal<FhirOmopVocabularyMapEntity> {
     public static final FhirOmopVocabularyMapDal INSTANCE = new FhirOmopVocabularyMapDal();

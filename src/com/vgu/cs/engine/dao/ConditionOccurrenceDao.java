@@ -7,7 +7,7 @@ package com.vgu.cs.engine.dao;
  * @author namnh16 on 04/03/2021
  */
 
-import com.vgu.cs.engine.entity.ConditionOccurrenceEntity;
+import com.vgu.cs.engine.entity.omop.ConditionOccurrenceEntity;
 
 public class ConditionOccurrenceDao extends PostgreSqlDao<ConditionOccurrenceEntity> {
     public ConditionOccurrenceDao(String instanceName) {

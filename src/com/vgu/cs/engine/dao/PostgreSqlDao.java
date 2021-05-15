@@ -10,7 +10,7 @@ package com.vgu.cs.engine.dao;
 import com.vgu.cs.common.config.VConfig;
 import com.vgu.cs.common.logger.VLogger;
 import com.vgu.cs.common.util.CollectionUtils;
-import com.vgu.cs.engine.entity.PostgreSqlEntity;
+import com.vgu.cs.engine.entity.omop.PostgreSqlEntity;
 import com.vgu.cs.engine.util.SqlUtils;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.apache.logging.log4j.Logger;

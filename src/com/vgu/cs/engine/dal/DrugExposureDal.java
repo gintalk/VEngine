@@ -8,7 +8,7 @@ package com.vgu.cs.engine.dal;
  */
 
 import com.vgu.cs.engine.dao.DrugExposureDao;
-import com.vgu.cs.engine.entity.DrugExposureEntity;
+import com.vgu.cs.engine.entity.omop.DrugExposureEntity;
 
 public class DrugExposureDal extends PostgreSqlDal<DrugExposureEntity> {
     

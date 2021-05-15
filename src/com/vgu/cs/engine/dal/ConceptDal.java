@@ -8,7 +8,7 @@ package com.vgu.cs.engine.dal;
  */
 
 import com.vgu.cs.engine.dao.ConceptDao;
-import com.vgu.cs.engine.entity.ConceptEntity;
+import com.vgu.cs.engine.entity.omop.ConceptEntity;
 
 public class ConceptDal extends PostgreSqlDal<ConceptEntity> {
     

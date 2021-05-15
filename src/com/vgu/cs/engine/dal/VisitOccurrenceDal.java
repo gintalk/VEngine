@@ -8,7 +8,7 @@ package com.vgu.cs.engine.dal;
  */
 
 import com.vgu.cs.engine.dao.VisitOccurrenceDao;
-import com.vgu.cs.engine.entity.VisitOccurrenceEntity;
+import com.vgu.cs.engine.entity.omop.VisitOccurrenceEntity;
 
 public class VisitOccurrenceDal extends PostgreSqlDal<VisitOccurrenceEntity> {
     

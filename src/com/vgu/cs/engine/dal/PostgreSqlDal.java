@@ -9,10 +9,8 @@ package com.vgu.cs.engine.dal;
 
 import com.vgu.cs.common.util.CollectionUtils;
 import com.vgu.cs.engine.dao.PostgreSqlDao;
-import com.vgu.cs.engine.entity.ConceptEntity;
-import com.vgu.cs.engine.entity.PostgreSqlEntity;
+import com.vgu.cs.engine.entity.omop.PostgreSqlEntity;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public abstract class PostgreSqlDal<T extends PostgreSqlEntity> {

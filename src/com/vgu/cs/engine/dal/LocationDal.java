@@ -9,7 +9,7 @@ package com.vgu.cs.engine.dal;
 
 import com.vgu.cs.common.logger.VLogger;
 import com.vgu.cs.engine.dao.LocationDao;
-import com.vgu.cs.engine.entity.LocationEntity;
+import com.vgu.cs.engine.entity.omop.LocationEntity;
 import org.apache.logging.log4j.Logger;
 
 public class LocationDal extends PostgreSqlDal<LocationEntity> {

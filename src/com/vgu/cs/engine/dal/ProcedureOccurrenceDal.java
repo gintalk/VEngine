@@ -8,7 +8,7 @@ package com.vgu.cs.engine.dal;
  */
 
 import com.vgu.cs.engine.dao.ProcedureOccurrenceDao;
-import com.vgu.cs.engine.entity.ProcedureOccurrenceEntity;
+import com.vgu.cs.engine.entity.omop.ProcedureOccurrenceEntity;
 
 public class ProcedureOccurrenceDal extends PostgreSqlDal<ProcedureOccurrenceEntity> {
 

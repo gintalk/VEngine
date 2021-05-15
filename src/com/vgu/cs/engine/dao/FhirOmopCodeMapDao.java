@@ -7,7 +7,7 @@ package com.vgu.cs.engine.dao;
  * @author namnh16 on 14/03/2021
  */
 
-import com.vgu.cs.engine.entity.FhirOmopCodeMapEntity;
+import com.vgu.cs.engine.entity.omop.FhirOmopCodeMapEntity;
 
 public class FhirOmopCodeMapDao extends PostgreSqlDao<FhirOmopCodeMapEntity> {
     public FhirOmopCodeMapDao(String instanceName) {

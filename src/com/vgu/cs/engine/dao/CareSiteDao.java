@@ -7,7 +7,7 @@ package com.vgu.cs.engine.dao;
  * @author namnh16 on 04/03/2021
  */
 
-import com.vgu.cs.engine.entity.CareSiteEntity;
+import com.vgu.cs.engine.entity.omop.CareSiteEntity;
 
 public class CareSiteDao extends PostgreSqlDao<CareSiteEntity> {
     public CareSiteDao(String instanceName) {

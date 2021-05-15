@@ -7,7 +7,7 @@ package com.vgu.cs.engine.dao;
  * @author namnh16 on 06/03/2021
  */
 
-import com.vgu.cs.engine.entity.ConceptEntity;
+import com.vgu.cs.engine.entity.omop.ConceptEntity;
 
 public class ConceptDao extends PostgreSqlDao<ConceptEntity> {
     public ConceptDao(String instanceName){

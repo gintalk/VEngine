@@ -8,7 +8,7 @@ package com.vgu.cs.engine.dal;
  */
 
 import com.vgu.cs.engine.dao.SpecimenDao;
-import com.vgu.cs.engine.entity.SpecimenEntity;
+import com.vgu.cs.engine.entity.omop.SpecimenEntity;
 
 public class SpecimenDal extends PostgreSqlDal<SpecimenEntity> {
 

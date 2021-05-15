@@ -7,7 +7,7 @@ package com.vgu.cs.engine.dao;
  * @author namnh16 on 04/03/2021
  */
 
-import com.vgu.cs.engine.entity.ProcedureOccurrenceEntity;
+import com.vgu.cs.engine.entity.omop.ProcedureOccurrenceEntity;
 
 public class ProcedureOccurrenceDao extends PostgreSqlDao<ProcedureOccurrenceEntity> {
     public ProcedureOccurrenceDao(String instanceName) {

@@ -7,7 +7,7 @@ package com.vgu.cs.engine.dao;
  * @author namnh16 on 04/03/2021
  */
 
-import com.vgu.cs.engine.entity.DrugExposureEntity;
+import com.vgu.cs.engine.entity.omop.DrugExposureEntity;
 
 public class DrugExposureDao extends PostgreSqlDao<DrugExposureEntity> {
     public DrugExposureDao(String instanceName) {

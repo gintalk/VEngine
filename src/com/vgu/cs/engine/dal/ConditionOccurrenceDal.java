@@ -8,7 +8,7 @@ package com.vgu.cs.engine.dal;
  */
 
 import com.vgu.cs.engine.dao.ConditionOccurrenceDao;
-import com.vgu.cs.engine.entity.ConditionOccurrenceEntity;
+import com.vgu.cs.engine.entity.omop.ConditionOccurrenceEntity;
 
 public class ConditionOccurrenceDal extends PostgreSqlDal<ConditionOccurrenceEntity> {
     

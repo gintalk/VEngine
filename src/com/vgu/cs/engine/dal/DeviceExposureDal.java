@@ -8,7 +8,7 @@ package com.vgu.cs.engine.dal;
  */
 
 import com.vgu.cs.engine.dao.DeviceExposureDao;
-import com.vgu.cs.engine.entity.DeviceExposureEntity;
+import com.vgu.cs.engine.entity.omop.DeviceExposureEntity;
 
 public class DeviceExposureDal extends PostgreSqlDal<DeviceExposureEntity> {
 

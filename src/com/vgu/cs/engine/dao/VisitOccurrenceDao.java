@@ -7,7 +7,7 @@ package com.vgu.cs.engine.dao;
  * @author namnh16 on 04/03/2021
  */
 
-import com.vgu.cs.engine.entity.VisitOccurrenceEntity;
+import com.vgu.cs.engine.entity.omop.VisitOccurrenceEntity;
 
 public class VisitOccurrenceDao extends PostgreSqlDao<VisitOccurrenceEntity> {
     public VisitOccurrenceDao(String instanceName) {

@@ -7,7 +7,7 @@ package com.vgu.cs.engine.dao;
  * @author namnh16 on 04/03/2021
  */
 
-import com.vgu.cs.engine.entity.LocationEntity;
+import com.vgu.cs.engine.entity.omop.LocationEntity;
 
 public class LocationDao extends PostgreSqlDao<LocationEntity> {
     public LocationDao(String instanceName){

@@ -7,7 +7,7 @@ package com.vgu.cs.engine.dao;
  * @author namnh16 on 04/03/2021
  */
 
-import com.vgu.cs.engine.entity.ProviderEntity;
+import com.vgu.cs.engine.entity.omop.ProviderEntity;
 
 public class ProviderDao extends PostgreSqlDao<ProviderEntity> {
     public ProviderDao(String instanceName) {

@@ -8,7 +8,7 @@ package com.vgu.cs.engine.dal;
  */
 
 import com.vgu.cs.engine.dao.FhirOmopCodeMapDao;
-import com.vgu.cs.engine.entity.FhirOmopCodeMapEntity;
+import com.vgu.cs.engine.entity.omop.FhirOmopCodeMapEntity;
 
 public class FhirOmopCodeMapDal extends PostgreSqlDal<FhirOmopCodeMapEntity> {
     
