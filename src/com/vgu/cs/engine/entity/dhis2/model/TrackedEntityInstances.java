@@ -11,7 +11,11 @@ import java.util.List;
 
 public class TrackedEntityInstances extends BaseDhis2Entity {
 
-    public List<TrackedEntityInstance> trackedEntityInstances;
+    private List<TrackedEntityInstance> trackedEntityInstances;
+
+    public List<TrackedEntityInstance> getTrackedEntityInstances() {
+        return trackedEntityInstances;
+    }
 
     @Override
     public String toString() {

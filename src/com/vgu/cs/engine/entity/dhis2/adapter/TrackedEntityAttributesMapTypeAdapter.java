@@ -21,7 +21,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-public class AttributesMapTypeAdapter implements TypeAdapterFactory {
+public class TrackedEntityAttributesMapTypeAdapter implements TypeAdapterFactory {
 
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {

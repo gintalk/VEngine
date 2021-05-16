@@ -9,7 +9,7 @@ package com.vgu.cs.engine.entity.dhis2.model;
 
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
-import com.vgu.cs.engine.entity.dhis2.adapter.AttributesMapTypeAdapter;
+import com.vgu.cs.engine.entity.dhis2.adapter.TrackedEntityAttributesMapTypeAdapter;
 
 import java.util.Map;
 
@@ -25,7 +25,7 @@ public class TrackedEntityInstance extends BaseDhis2Entity {
     private String organisationId;
 
     @SerializedName("attributes")
-    @JsonAdapter(value = AttributesMapTypeAdapter.class)
+    @JsonAdapter(value = TrackedEntityAttributesMapTypeAdapter.class)
     private Map<String, TrackedEntityAttribute> attributes;
 
 
