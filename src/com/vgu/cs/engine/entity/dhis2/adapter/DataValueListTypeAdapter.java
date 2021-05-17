@@ -14,13 +14,18 @@ import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonToken;
 import com.google.gson.stream.JsonWriter;
+import com.vgu.cs.engine.entity.dhis2.model.DataValue;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
-public class UserIdStringTypeAdapter implements TypeAdapterFactory {
+public class DataValueListTypeAdapter implements TypeAdapterFactory {
 
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
+        TypeAdapter<DataValue> dataValueAdapter = gson.getAdapter(TypeToken.get(DataValue.class));
+
         return new TypeAdapter<T>() {
             @Override
             public void write(JsonWriter out, T value) {
@@ -35,10 +40,16 @@ public class UserIdStringTypeAdapter implements TypeAdapterFactory {
                     return null;
                 }
 
-                String value = in.nextString();
-                String uniqueId = String.valueOf(value.hashCode());
+                List<DataValue> list = new ArrayList<>();
 
-                return (T) uniqueId;
+                in.beginArray();
+                while (in.hasNext()) {
+                    DataValue dataValue = dataValueAdapter.read(in);
+                    list.add(dataValue);
+                }
+                in.endArray();
+
+                return (T) list;
             }
         };
     }

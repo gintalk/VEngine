@@ -7,18 +7,11 @@ package com.vgu.cs.engine.entity.dhis2.model;
  * @author namnh16 on 16/05/2021
  */
 
-import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
-import com.vgu.cs.engine.entity.dhis2.adapter.UserIdStringTypeAdapter;
 
 public class User {
 
-    /**
-     * DHIS2 API does not return a universally unique ID for this type of object, therefore a makeshift "unique" ID, obtained
-     * by hashing the returned ID string, is used, until a better alternative comes up
-     */
     @SerializedName("id")
-    @JsonAdapter(value = UserIdStringTypeAdapter.class)
     private String id;
 
     @SerializedName("username")
@@ -38,6 +31,14 @@ public class User {
 
     public String getId() {
         return id;
+    }
+
+    /**
+     * DHIS2 API does not return a universally unique ID for this type of object, therefore a makeshift "unique" ID, obtained
+     * by hashing the returned ID string, is used, until a better alternative comes up
+     */
+    public int getUniqueId() {
+        return id.hashCode();
     }
 
     public String getUsername() {
