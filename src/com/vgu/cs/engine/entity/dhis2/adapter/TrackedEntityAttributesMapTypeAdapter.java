@@ -46,9 +46,9 @@ public class TrackedEntityAttributesMapTypeAdapter implements TypeAdapterFactory
                 in.beginArray();
                 while (in.hasNext()) {
                     TrackedEntityAttribute attribute = teaAdapter.read(in);
-                    TrackedEntityAttribute replaced = map.put(attribute.getId(), attribute);
+                    TrackedEntityAttribute replaced = map.put(attribute.getAttribute(), attribute);
                     if (replaced != null) {
-                        throw new JsonSyntaxException("Duplicate key: " + attribute.getId());
+                        throw new JsonSyntaxException("Duplicate key: " + attribute.getAttribute());
                     }
                 }
                 in.endArray();
