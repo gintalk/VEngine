@@ -18,8 +18,6 @@ public class TrackedEntityInstance extends BaseDhis2Entity {
     @JsonAdapter(value = TrackedEntityAttributesMapTypeAdapter.class)
     private final Map<String, TrackedEntityAttribute> attributes;
     private String trackedEntityInstance;
-    private String trackedEntityType;
-    private String orgUnit;
 
     public TrackedEntityInstance() {
         attributes = new HashMap<>();
@@ -31,22 +29,6 @@ public class TrackedEntityInstance extends BaseDhis2Entity {
 
     public void setTrackedEntityInstance(String trackedEntityInstance) {
         this.trackedEntityInstance = trackedEntityInstance;
-    }
-
-    public String getTrackedEntityType() {
-        return trackedEntityType;
-    }
-
-    public void setTrackedEntityType(String trackedEntityType) {
-        this.trackedEntityType = trackedEntityType;
-    }
-
-    public String getOrgUnit() {
-        return orgUnit;
-    }
-
-    public void setOrgUnit(String orgUnit) {
-        this.orgUnit = orgUnit;
     }
 
     public TrackedEntityAttribute getUniqueIdAttribute() {
@@ -121,8 +103,6 @@ public class TrackedEntityInstance extends BaseDhis2Entity {
     public String toString() {
         return "TrackedEntityInstance{" +
             "trackedEntityInstance='" + trackedEntityInstance + '\'' +
-            ", trackedEntityType='" + trackedEntityType + '\'' +
-            ", orgUnit='" + orgUnit + '\'' +
             ", attributes=" + attributes +
             '}';
     }
