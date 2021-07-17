@@ -7,7 +7,7 @@ package com.vgu.cs.engine.entity.omop;
  * @author namnh16 on 04/03/2021
  */
 
-public class PersonEntity extends PostgreSqlEntity{
+public class PersonEntity extends PostgreSqlEntity {
     public int person_id;
     public int gender_concept_id;
     public int year_of_birth;
