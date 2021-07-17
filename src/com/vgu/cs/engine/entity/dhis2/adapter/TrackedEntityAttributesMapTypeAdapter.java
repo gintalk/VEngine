@@ -1,12 +1,5 @@
 package com.vgu.cs.engine.entity.dhis2.adapter;
 
-/*
- * Copyright (c) 2012-2016 by Zalo Group.
- * All Rights Reserved.
- *
- * @author namnh16 on 15/05/2021
- */
-
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
 import com.google.gson.TypeAdapter;
